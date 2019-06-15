@@ -1,0 +1,173 @@
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Final</title>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.invoice-title h2, .invoice-title h3 {
+    display: inline-block;
+}
+
+.table > tbody > tr > .no-line {
+    border-top: none;
+}
+
+.table > thead > tr > .no-line {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .thick-line {
+    border-top: 2px solid;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    background:#ffffff;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+      background:#ffffff;
+}
+
+.main {
+  background:#f1f1f1;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 20px 0 0 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }
+
+.panel {
+    border: 0px solid transparent;
+    background: #f1f1f1;
+}
+
+.panel-default>.panel-heading .badge {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.container {
+    background: #ffffff;
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.panel-heading {
+    border-bottom: 0px solid #555555 !important;
+}
+
+.panel-default>.panel-heading {
+    color: #ffffff;
+    background-color: #428bca;
+    padding-bottom: 1px !important;
+}
+</style>
+ </head>
+
+  <body class="main">
+
+    <div class="container">
+
+      <div class="row marketing">
+      
+        <div class="col-lg-12">
+        
+<hr />
+
+<div>
+<center>
+<h4>Sorry {{session['email']}}</h4>
+{% if session['email'] %}
+<h5>Your order could not be placed right now. A customer rep will call you shortly.</h5>
+{% else %}
+<h5>Your order could not be placed right now. Please contact customer care.</h5>
+{% endif %}
+<hr />  
+</div>
+<h2><center><a href="/">Continue Shopping</a></center><h2>
+<br/>
+</center>
+        </div>
+
+        
+        
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+

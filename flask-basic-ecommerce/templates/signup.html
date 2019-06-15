@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Signup</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico') }}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/fonts/iconic/css/material-design-iconic-font.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/vendor/animate/animate.css') }}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/vendor/animsition/css/animsition.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/vendor/daterangepicker/daterangepicker.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup/css/main.css') }}">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">				
+						<span class="login100-form-title p-b-26">
+								<a href="/" class="logo">
+									<!-- <img src="{{ url_for('static', filename='images/icons/logo.png') }}" alt="IMG-LOGO"> -->
+								</a>
+								<hr/>
+								SIGNUP		
+							</span>
+				<form method="POST" action="{{ url_for('signup') }}">
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter Your Name">
+						<input class="input100" type="text" name="name">
+						<span class="focus-input100" data-placeholder="Name"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="email">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Input 10 digit phone number">
+						<input class="input100" type="text" name="phone_number">
+						<span class="focus-input100" data-placeholder="Phone"></span>
+					</div>
+
+					<div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" type="submit" value="submit">
+								SIGNUP
+							</button>
+						</div>
+					</div>
+
+				</form>
+
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							Already have an account?
+						</span>
+
+						<a class="txt2" href="/login">
+							Login
+						</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/vendor/animsition/js/animsition.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='login_signup/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/vendor/select2/select2.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/vendor/daterangepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='login_signup/vendor/daterangepicker/daterangepicker.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/vendor/countdowntime/countdowntime.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='login_signup/js/main.js') }}"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</body>
+</html>
